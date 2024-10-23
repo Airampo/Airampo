@@ -1,11 +1,7 @@
 1. Clasificación de números positivos, negativos o cero:
   Este programa lee 10 números y clasifica si son positivos, negativos o cero usando if.
 
-
-
 numeros <- numeric(10)
-
-
 
 cat("Por favor, ingrese los siguientes 10 números uno por uno:\n")
 for (i in 1:10) {
@@ -13,7 +9,6 @@ for (i in 1:10) {
   num <- as.numeric(readline(prompt = "Ingrese el número: "))
   numeros[i] <- num  
 }
-
 
 
 for (i in 1:10) {
@@ -30,9 +25,11 @@ for (i in 1:10) {
 
 
 
+
+
+
 2. Cálculo de números pares e impares: 
 Genera una lista de 100 números enteros aleatorios. Usa un bucle for para recorrer la lista y una estructura if para contar cuántos son pares y cuántos son impares.
-
 
 set.seed(123)
 pares <- 0
@@ -58,6 +55,7 @@ cat("Cantidad total de números impares:", impares, "\n")
 
 
 
+
 3. Suma de los primeros N números:
 Escribe un programa que pida al usuario un número N e imprima la surna de los números del 1 al N usando un bucle for.
 
@@ -69,6 +67,8 @@ for (i in 1:N) {
   suma <- suma + i
 }
 cat("La suma de los números del 1 al", N, "es:", suma, "\n")
+
+
 
 
 
@@ -93,6 +93,10 @@ while (contador < 20) {
 
 
 
+
+
+
+
 5. Cálculo de factorial:
   Escribe un programa que calcule el factorial de un número n introducido por el usuario usando un bucle for. 
 
@@ -106,6 +110,9 @@ for (i in 1:n) {
   factorial <- factorial * i
 }
 cat("El factorial de", n, "es:", factorial, "\n")
+
+
+
 
 
 
@@ -133,12 +140,15 @@ while (!adivinado) {
   }
 }
 
-  
-  
+
+
+
+
+
+
+ 
 7. Validación de contraseña:
 Crea un sistema de autenticación que pida una contraseña y permita tres intentos antes de bloquear al usuario. Utiliza un bucle while que verifique si la contraseña ingresada es correcta o no.
-
-
 
 contrasena_correcta <- "1489825Shirley"
 intentos <- 0
@@ -166,6 +176,10 @@ while (intentos < 3 && !autenticado) {
 
 
 
+
+
+
+
 8. Suma de dígitos de un número:
 Pide al usuario que ingrese un número entero y utiliza un bucle while para sumar los dígitos del número. Por ejemplo, si el número es 1234, la suma sería 1+2+3+4=10.
 
@@ -183,6 +197,10 @@ cat("La suma de los dígitos es:", suma, "\n")
 
 
 
+
+
+
+
 9. Impresión de patrones:
 Utiliza un bucle for para imprimir un patrón en pantalla, como un triángulo o una pirámide de asteriscos. Por ejemplo: markdown
 
@@ -192,6 +210,10 @@ filas <- 5
 for (i in 1:filas) {
   cat(rep("*", i), "\n")
 }
+
+
+
+
 
 
 
